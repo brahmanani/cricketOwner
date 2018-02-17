@@ -1,0 +1,48 @@
+<div class="owner-menu">
+  <header class="fixed-top">
+    <div class="container-fluid h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-4">
+          <div class="header-score-sec align-items-center">
+            <img src="assets/gold-coin-icon1.png" alt="score coins"><span class="font-weight-bold">6,000</span>
+          </div>
+        </div>
+        <div class="col-4 text-center">
+            <h2 class="header-heading font-weight-bold">Golive Cricket</h2>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </header>
+  <div class="clearfix wrapper-fix">
+    <div class="owner-top-section position-relative">
+      <div class="btn-team position-absolute">
+        <span class="notification-count rounded-circle  d-inline-block">2</span>
+      </div>
+      <h3 class="title-text position-relative">
+          <img src="assets/app-title.png" alt="app title" class="w-75">
+      </h3>
+      <div class="btn-settings position-absolute text-hide">Settings</div>
+    </div>
+    <div class="menu">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding:0" >
+              <a class="position-relative team-roaster h-100 d-block">
+                <img src="assets/team-roaster.png" alt="team roaster">
+                <span class="position-absolute menu-title font-weight-bold font-italic">Team Roster</span>
+              </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="padding:0" *ngFor="let nav of menu">
+              <a class="position-relative h-100 d-block">
+                <img src="{{nav.Image}}" alt="{{nav.title}}">
+                <span class="position-absolute menu-title font-weight-bold font-italic">{{nav.title}}</span>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
